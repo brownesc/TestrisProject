@@ -1,0 +1,46 @@
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "heading body";
+}
+
+.heading {
+    font-family: 'Press Start 2P', cursive;
+    grid-column-start: 1;
+    grid-column-end: 11;
+}
+.container {
+/* width: 229px;
+height: 500px; */
+display: grid;
+gap: 1px;
+/* background-color: skyblue; */
+grid-template-columns: repeat(10,1fr);
+/* Use Column Count For Responsiveness */
+border: 2px solid black;
+
+}
+/* @media (aspect-ratio: 5/8) { */
+    .cell {
+        /* height: 20px;
+        width: 20px; */
+        min-height: 20px;
+        min-width: 20px;
+        grid-area: auto;
+        /* background-color: slateblue; */
+        /* border: 1px solid black; */
+        /* padding-top: 100%; */
+        box-shadow: 
+       inset 0 -3em 3em rgba(0,0,0,0.1), 
+             0 0  0 1px rgb(0, 0, 0),
+             0.3em 0.3em .3em rgba(0,0,0,0.3);
+        /* border: */
+    }
+    
+
+/* } */
+
+/* .tetromino {
+    background-color: red;
+} */
